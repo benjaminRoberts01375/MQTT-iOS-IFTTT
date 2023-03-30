@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		074440D029CAAB3C002E6F93 /* Mobile_MQTTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074440CF29CAAB3C002E6F93 /* Mobile_MQTTApp.swift */; };
+		074440D229CAAB3C002E6F93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074440D129CAAB3C002E6F93 /* ContentView.swift */; };
+		074440D429CAAB3E002E6F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074440D329CAAB3E002E6F93 /* Assets.xcassets */; };
+		074440D729CAAB3E002E6F93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074440D629CAAB3E002E6F93 /* Preview Assets.xcassets */; };
+		074440E129CAAB3E002E6F93 /* Mobile_MQTTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074440E029CAAB3E002E6F93 /* Mobile_MQTTTests.swift */; };
+		074440EB29CAAB3E002E6F93 /* Mobile_MQTTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074440EA29CAAB3E002E6F93 /* Mobile_MQTTUITests.swift */; };
+		074440ED29CAAB3E002E6F93 /* Mobile_MQTTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074440EC29CAAB3E002E6F93 /* Mobile_MQTTUITestsLaunchTests.swift */; };
+		074440FA29CAAB54002E6F93 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074440F929CAAB54002E6F93 /* ContentViewModel.swift */; };
+		074440FC29CAAB63002E6F93 /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074440FB29CAAB63002E6F93 /* MQTTManager.swift */; };
+		074440FF29CAAB7F002E6F93 /* SettingsV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074440FE29CAAB7F002E6F93 /* SettingsV.swift */; };
+		0744410129CAAB8D002E6F93 /* SettingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0744410029CAAB8D002E6F93 /* SettingVM.swift */; };
+		0744410429CAABB9002E6F93 /* MQTTNIO in Frameworks */ = {isa = PBXBuildFile; productRef = 0744410329CAABB9002E6F93 /* MQTTNIO */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		074440DD29CAAB3E002E6F93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 074440C429CAAB3C002E6F93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 074440CB29CAAB3C002E6F93;
+			remoteInfo = "Mobile MQTT";
+		};
+		074440E729CAAB3E002E6F93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 074440C429CAAB3C002E6F93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 074440CB29CAAB3C002E6F93;
+			remoteInfo = "Mobile MQTT";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		074440CC29CAAB3C002E6F93 /* Mobile MQTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile MQTT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		074440CF29CAAB3C002E6F93 /* Mobile_MQTTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_MQTTApp.swift; sourceTree = "<group>"; };
+		074440D129CAAB3C002E6F93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		074440D329CAAB3E002E6F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		074440D629CAAB3E002E6F93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		074440DC29CAAB3E002E6F93 /* Mobile MQTTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile MQTTTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		074440E029CAAB3E002E6F93 /* Mobile_MQTTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_MQTTTests.swift; sourceTree = "<group>"; };
+		074440E629CAAB3E002E6F93 /* Mobile MQTTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile MQTTUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		074440EA29CAAB3E002E6F93 /* Mobile_MQTTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_MQTTUITests.swift; sourceTree = "<group>"; };
+		074440EC29CAAB3E002E6F93 /* Mobile_MQTTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_MQTTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		074440F929CAAB54002E6F93 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		074440FB29CAAB63002E6F93 /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
+		074440FE29CAAB7F002E6F93 /* SettingsV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsV.swift; sourceTree = "<group>"; };
+		0744410029CAAB8D002E6F93 /* SettingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		074440C929CAAB3C002E6F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0744410429CAABB9002E6F93 /* MQTTNIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074440D929CAAB3E002E6F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074440E329CAAB3E002E6F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		074440C329CAAB3C002E6F93 = {
+			isa = PBXGroup;
+			children = (
+				074440CE29CAAB3C002E6F93 /* Mobile MQTT */,
+				074440DF29CAAB3E002E6F93 /* Mobile MQTTTests */,
+				074440E929CAAB3E002E6F93 /* Mobile MQTTUITests */,
+				074440CD29CAAB3C002E6F93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		074440CD29CAAB3C002E6F93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				074440CC29CAAB3C002E6F93 /* Mobile MQTT.app */,
+				074440DC29CAAB3E002E6F93 /* Mobile MQTTTests.xctest */,
+				074440E629CAAB3E002E6F93 /* Mobile MQTTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		074440CE29CAAB3C002E6F93 /* Mobile MQTT */ = {
+			isa = PBXGroup;
+			children = (
+				074440CF29CAAB3C002E6F93 /* Mobile_MQTTApp.swift */,
+				074440D129CAAB3C002E6F93 /* ContentView.swift */,
+				074440F929CAAB54002E6F93 /* ContentViewModel.swift */,
+				074440FB29CAAB63002E6F93 /* MQTTManager.swift */,
+				074440FD29CAAB75002E6F93 /* Settings */,
+				074440D329CAAB3E002E6F93 /* Assets.xcassets */,
+				074440D529CAAB3E002E6F93 /* Preview Content */,
+			);
+			path = "Mobile MQTT";
+			sourceTree = "<group>";
+		};
+		074440D529CAAB3E002E6F93 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				074440D629CAAB3E002E6F93 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		074440DF29CAAB3E002E6F93 /* Mobile MQTTTests */ = {
+			isa = PBXGroup;
+			children = (
+				074440E029CAAB3E002E6F93 /* Mobile_MQTTTests.swift */,
+			);
+			path = "Mobile MQTTTests";
+			sourceTree = "<group>";
+		};
+		074440E929CAAB3E002E6F93 /* Mobile MQTTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				074440EA29CAAB3E002E6F93 /* Mobile_MQTTUITests.swift */,
+				074440EC29CAAB3E002E6F93 /* Mobile_MQTTUITestsLaunchTests.swift */,
+			);
+			path = "Mobile MQTTUITests";
+			sourceTree = "<group>";
+		};
+		074440FD29CAAB75002E6F93 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				074440FE29CAAB7F002E6F93 /* SettingsV.swift */,
+				0744410029CAAB8D002E6F93 /* SettingVM.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		074440CB29CAAB3C002E6F93 /* Mobile MQTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074440F029CAAB3E002E6F93 /* Build configuration list for PBXNativeTarget "Mobile MQTT" */;
+			buildPhases = (
+				074440C829CAAB3C002E6F93 /* Sources */,
+				074440C929CAAB3C002E6F93 /* Frameworks */,
+				074440CA29CAAB3C002E6F93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mobile MQTT";
+			packageProductDependencies = (
+				0744410329CAABB9002E6F93 /* MQTTNIO */,
+			);
+			productName = "Mobile MQTT";
+			productReference = 074440CC29CAAB3C002E6F93 /* Mobile MQTT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		074440DB29CAAB3E002E6F93 /* Mobile MQTTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074440F329CAAB3E002E6F93 /* Build configuration list for PBXNativeTarget "Mobile MQTTTests" */;
+			buildPhases = (
+				074440D829CAAB3E002E6F93 /* Sources */,
+				074440D929CAAB3E002E6F93 /* Frameworks */,
+				074440DA29CAAB3E002E6F93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				074440DE29CAAB3E002E6F93 /* PBXTargetDependency */,
+			);
+			name = "Mobile MQTTTests";
+			productName = "Mobile MQTTTests";
+			productReference = 074440DC29CAAB3E002E6F93 /* Mobile MQTTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		074440E529CAAB3E002E6F93 /* Mobile MQTTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074440F629CAAB3E002E6F93 /* Build configuration list for PBXNativeTarget "Mobile MQTTUITests" */;
+			buildPhases = (
+				074440E229CAAB3E002E6F93 /* Sources */,
+				074440E329CAAB3E002E6F93 /* Frameworks */,
+				074440E429CAAB3E002E6F93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				074440E829CAAB3E002E6F93 /* PBXTargetDependency */,
+			);
+			name = "Mobile MQTTUITests";
+			productName = "Mobile MQTTUITests";
+			productReference = 074440E629CAAB3E002E6F93 /* Mobile MQTTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		074440C429CAAB3C002E6F93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					074440CB29CAAB3C002E6F93 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					074440DB29CAAB3E002E6F93 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 074440CB29CAAB3C002E6F93;
+					};
+					074440E529CAAB3E002E6F93 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 074440CB29CAAB3C002E6F93;
+					};
+				};
+			};
+			buildConfigurationList = 074440C729CAAB3C002E6F93 /* Build configuration list for PBXProject "Mobile MQTT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 074440C329CAAB3C002E6F93;
+			packageReferences = (
+				0744410229CAABB9002E6F93 /* XCRemoteSwiftPackageReference "mqtt-nio" */,
+			);
+			productRefGroup = 074440CD29CAAB3C002E6F93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				074440CB29CAAB3C002E6F93 /* Mobile MQTT */,
+				074440DB29CAAB3E002E6F93 /* Mobile MQTTTests */,
+				074440E529CAAB3E002E6F93 /* Mobile MQTTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		074440CA29CAAB3C002E6F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074440D729CAAB3E002E6F93 /* Preview Assets.xcassets in Resources */,
+				074440D429CAAB3E002E6F93 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074440DA29CAAB3E002E6F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074440E429CAAB3E002E6F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		074440C829CAAB3C002E6F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074440D229CAAB3C002E6F93 /* ContentView.swift in Sources */,
+				074440FC29CAAB63002E6F93 /* MQTTManager.swift in Sources */,
+				074440D029CAAB3C002E6F93 /* Mobile_MQTTApp.swift in Sources */,
+				074440FF29CAAB7F002E6F93 /* SettingsV.swift in Sources */,
+				074440FA29CAAB54002E6F93 /* ContentViewModel.swift in Sources */,
+				0744410129CAAB8D002E6F93 /* SettingVM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074440D829CAAB3E002E6F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074440E129CAAB3E002E6F93 /* Mobile_MQTTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074440E229CAAB3E002E6F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074440ED29CAAB3E002E6F93 /* Mobile_MQTTUITestsLaunchTests.swift in Sources */,
+				074440EB29CAAB3E002E6F93 /* Mobile_MQTTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		074440DE29CAAB3E002E6F93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 074440CB29CAAB3C002E6F93 /* Mobile MQTT */;
+			targetProxy = 074440DD29CAAB3E002E6F93 /* PBXContainerItemProxy */;
+		};
+		074440E829CAAB3E002E6F93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 074440CB29CAAB3C002E6F93 /* Mobile MQTT */;
+			targetProxy = 074440E729CAAB3E002E6F93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		074440EE29CAAB3E002E6F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		074440EF29CAAB3E002E6F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		074440F129CAAB3E002E6F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mobile MQTT/Preview Content\"";
+				DEVELOPMENT_TEAM = 68A766T4GX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BR.Mobile-MQTT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		074440F229CAAB3E002E6F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mobile MQTT/Preview Content\"";
+				DEVELOPMENT_TEAM = 68A766T4GX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BR.Mobile-MQTT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		074440F429CAAB3E002E6F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68A766T4GX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BR.Mobile-MQTTTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile MQTT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mobile MQTT";
+			};
+			name = Debug;
+		};
+		074440F529CAAB3E002E6F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68A766T4GX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BR.Mobile-MQTTTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile MQTT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mobile MQTT";
+			};
+			name = Release;
+		};
+		074440F729CAAB3E002E6F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68A766T4GX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BR.Mobile-MQTTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mobile MQTT";
+			};
+			name = Debug;
+		};
+		074440F829CAAB3E002E6F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68A766T4GX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BR.Mobile-MQTTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mobile MQTT";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		074440C729CAAB3C002E6F93 /* Build configuration list for PBXProject "Mobile MQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074440EE29CAAB3E002E6F93 /* Debug */,
+				074440EF29CAAB3E002E6F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		074440F029CAAB3E002E6F93 /* Build configuration list for PBXNativeTarget "Mobile MQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074440F129CAAB3E002E6F93 /* Debug */,
+				074440F229CAAB3E002E6F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		074440F329CAAB3E002E6F93 /* Build configuration list for PBXNativeTarget "Mobile MQTTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074440F429CAAB3E002E6F93 /* Debug */,
+				074440F529CAAB3E002E6F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		074440F629CAAB3E002E6F93 /* Build configuration list for PBXNativeTarget "Mobile MQTTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074440F729CAAB3E002E6F93 /* Debug */,
+				074440F829CAAB3E002E6F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0744410229CAABB9002E6F93 /* XCRemoteSwiftPackageReference "mqtt-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sroebert/mqtt-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0744410329CAABB9002E6F93 /* MQTTNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0744410229CAABB9002E6F93 /* XCRemoteSwiftPackageReference "mqtt-nio" */;
+			productName = MQTTNIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 074440C429CAAB3C002E6F93 /* Project object */;
+}
